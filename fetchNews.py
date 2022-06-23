@@ -5,6 +5,9 @@ from datetime import datetime, timedelta
 i = 1
 session = Session()
 public_url = 'https://cryptopanic.com/api/v1/posts/?auth_token=f8d35df861317a27f9e520363e61f2e083fea36e&public=true&filter=important'
+# public_url = 'https://cryptopanic.com/api/v1/posts/?auth_token=f8d35df861317a27f9e520363e61f2e083fea36e&public=true&filter=hot'
+# public_url = 'https://cryptopanic.com/api/v1/posts/?auth_token=f8d35df861317a27f9e520363e61f2e083fea36e&public=true'
+
 public_response = session.get(public_url)
 pubic_data = json.loads(public_response.text)["results"]
 
