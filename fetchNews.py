@@ -27,6 +27,7 @@ for public_new in pubic_data:
     # content.append(publish_date)
     # content.append(url)
 
-    print(f"{i}: {title}, {publish_date}\n{url}\n")
+    # print(f"{i}: {title}, {publish_date}\n{url}\n")
+    print(f"{i}: {title}\n{url}\n")
 
     i += 1
